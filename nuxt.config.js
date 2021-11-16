@@ -20,6 +20,7 @@ export default {
       {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'}
     ]
   },
+  target: 'static',
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
