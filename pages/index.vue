@@ -63,7 +63,9 @@
             </div>
             <div class="icon-message ml-30">
               <p class="text-size-18 font-weight-700">Shoot at Me</p>
-              <p class="text-size-16 font-weight-500 mt-10">adisamicheal20@gmail.com</p>
+              <p>
+                <a class="text-size-16 font-weight-500 mt-10" href="mailto:adisamicheal20@gmail.com" target="_blank" rel="noopener">adisamicheal20@gmail.com</a>
+              </p>
             </div>
           </div>
           <div class="mt-50 d-flex">
@@ -138,12 +140,12 @@ export default {
         {
           name: 'Ugbodaga Israel',
           title: 'Lead Frontend Engineer',
-          testimony: 'Adam was one of the first people in the Campus Operations Manager role, back when we didn’t have much of the process standardized and back when The Iron Yard was leaner and a bit scrappier.  Adam and I and another COM began weekly collaboration and support calls where we shared ideas and encouraged each other in our jobs, struggles, and celebrations.  As The Iron Yard and the Orlando campus shifted, grew, and changed, Adam was also asked to contribute to special '
+          testimony: `Micheal is an excellent frontend engineer, I trust Micheal to translate design to code perfectly, as a teammate Micheal is always available to provide help whenever possible, and has a keen eye for the tiniest details. I'd recommend Micheal anyday.`
         },
         {
           name: 'Oreoluwa Ojo',
           title: 'Senior Frontend Engineer',
-          testimony: 'Adam was one of the first people in the Campus Operations Manager role, back when we didn’t have much of the process standardized and back when The Iron Yard was leaner and a bit scrappier.  Adam and I and another COM began weekly collaboration and support calls where we shared ideas and encouraged each other in our jobs, struggles, and celebrations.  As The Iron Yard and the Orlando campus shifted, grew, and changed, Adam was also asked to contribute to special '
+          testimony: `I have been working with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Mihceal. I could always trust him to translate design to code perfectly.`
         }
       ],
       links: [
