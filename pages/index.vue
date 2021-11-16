@@ -140,12 +140,12 @@ export default {
         {
           name: 'Ugbodaga Israel',
           title: 'Lead Frontend Engineer',
-          testimony: `Micheal is an excellent frontend engineer, I trust Micheal to translate design to code perfectly, as a teammate Micheal is always available to provide help whenever possible, and has a keen eye for the tiniest details. I'd recommend Micheal anyday.`
+          testimony: `Micheal is an excellent frontend engineer, I trust him to translate design to code perfectly, as a teammate, he is always available to provide help whenever possible, and has a keen eye for the tiniest details. I'd recommend Micheal anyday.`
         },
         {
           name: 'Oreoluwa Ojo',
-          title: 'Senior Frontend Engineer',
-          testimony: `I have been working with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Mihceal. I could always trust him to translate design to code perfectly.`
+          title: 'Head of Engineering',
+          testimony: `I have been working with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Micheal. I could always trust him to translate design to code perfectly.`
         }
       ],
       links: [
@@ -186,6 +186,9 @@ export default {
       max-width: 675px;
       margin: 10px auto;
       line-height: 75px;
+      @media screen and (max-width: 768px) {
+        font-size: 58px !important;
+      }
       span {
         background: url('@/assets/images/vector.svg');
         background-repeat: no-repeat;
