@@ -1,0 +1,50 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: pxToRem(24);
+    line-height: pxToRem(31);
+  }
+  
+  h3 {
+    font-size: pxToRem(18);
+    line-height: pxToRem(23);
+  }
+  
+  h4 {
+    font-size: pxToRem(14);
+    line-height: pxToRem(18);
+  }
+  
+  h5 {
+    font-size: pxToRem(12);
+    line-height: pxToRem(16);
+  }
+  
+  h6 {
+    font-size: pxToRem(10);
+    line-height: pxToRem(13);
+  }
+  
+  textarea {
+    resize: none;
+  }
+
+  body {
+    color: black;
+    font-size: pxToRem(14);
+    line-height: pxToRem(22);
+    letter-spacing: -0.02em;
+  }
+  

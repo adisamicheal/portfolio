@@ -1,0 +1,59 @@
+// Text cases 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+$weights: (400, 500, 700);
+
+@each $weight in $weights {
+  .font-weight-#{$weight} {
+    font-weight: #{$weight} !important;
+  }
+}
+
+
+@for $i from 10 through 100 {
+  .text-size-#{$i} {
+    font-size: #{$i}px !important;
+  }
+  .line-height-#{$i} {
+    line-height: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 300 {
+  .m-#{$i} {
+    margin: #{$i}px !important;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
