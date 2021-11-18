@@ -4,7 +4,7 @@
       <img src="@/assets/images/micheal.svg" alt="frontend engineer picture">
       <p class="text-margin font-weight-500 text-size-28">Hey, I’m Micheal.</p>
       <h1 class="font-weight-700 text-size-72">A Sofware Engineer focused on the Web <span>Frontend.</span></h1>
-      <p class="text-margin font-weight-500 text-size-24">I like to make things, especially those that work on computers and on the web.</p>
+      <p class="text-margin font-weight-500 text-size-24 like">I like to make things, especially those that work on computers and on the web.</p>
       <div class="stack">
         <p class="text-size-16">Core: Javascript (Vue, Nuxt, React, Next)</p>
         <p class="text-size-16">Familiar: Python, Node.JS</p>
@@ -218,12 +218,18 @@ export default {
       margin: 10px auto;
       line-height: 75px;
       @media screen and (max-width: 768px) {
-        font-size: 58px !important;
+        font-size: 40px !important;
+        line-height: 47px !important;
       }
       span {
         background: url('@/assets/images/vector.svg');
         background-repeat: no-repeat;
         background-position: center;
+      }
+    }
+    .like {
+      @media screen and (max-width: 768px) {
+        font-size: 2opx !important;
       }
     }
     a {
