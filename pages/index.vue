@@ -2,9 +2,13 @@
   <div class="page_layout">
     <div class="page_hero text-center">
       <img src="@/assets/images/micheal.svg" alt="frontend engineer picture">
-      <p class="font-weight-500 text-size-28">Hey, I’m Micheal.</p>
+      <p class="text-margin font-weight-500 text-size-28">Hey, I’m Micheal.</p>
       <h1 class="font-weight-700 text-size-72">A Sofware Engineer focused on the Web <span>Frontend.</span></h1>
-      <p class="font-weight-500 text-size-24">I like to make things, especially those that work on computers and on the web.</p>
+      <p class="text-margin font-weight-500 text-size-24">I like to make things, especially those that work on computers and on the web.</p>
+      <div class="stack">
+        <p class="text-size-16">Core: Javascript (Vue, Nuxt, React, Next)</p>
+        <p class="text-size-16">Familiar: Python, Node.JS</p>
+      </div>
       <a 
         href="https://drive.google.com/file/d/1SFXM7J8amgCLkSjRdcv88BnR6gIummGy/view?usp=sharing"
         target="_blank"
@@ -22,7 +26,8 @@
         <div v-for="project in projects" :key="project.id" class="project_card">
           <img :src="project.image" alt="project card image">
           <p class="font-weight-500 text-size-18 mt-5">{{ project.name }}</p>
-          <a :href="project.link" class="text-size-14 mt-5">View Project</a>
+          <p class="font-weight-200 text-size-12 mt-5">{{ project.about }}</p>
+          <a :href="project.link" class="text-size-14 mt-15">View Project</a>
         </div>
       </div>
     </div>
@@ -33,9 +38,17 @@
           <div class="tetimonial-heading d-flex">
             <img src="@/assets/images/icon.png" alt="person">
             <div class="ml-10">
-              <h4>{{ testimonial.name }}</h4>
+              <h4>
+                <span>{{ testimonial.name }}</span>
+                <a :href="testimonial.profile" target="_blank" rel="noopener">
+                  <img class="linkedin" src="@/assets/images/linkedin.png" alt="linkedin">
+                </a>
+              </h4>
               <p class="mt-5">{{ testimonial.title }}</p>
             </div>
+            <!-- <a href="">
+              <img class="linkedin" src="@/assets/images/linkedin.png" alt="linkedin">
+            </a> -->
           </div>
           <div class="tetimonial-body mt-30">
             <p>{{ testimonial.testimony }}</p>
@@ -79,7 +92,8 @@
           </div>
         </div>
         <div class="contact-form">
-          <form action="" @submit.prevent>
+          <!-- Taking this off for now  -->
+          <!-- <form action="" @submit.prevent>
             <div class="input-wrapper">
               <label for="Name" class="text-size-18 font-weight-500">Name</label>
               <input id="name" type="text" class="mt-5">
@@ -93,7 +107,7 @@
               <textarea name="message" id="message" class="mt-5"></textarea>
             </div>
             <button class="submit-button text-size-18 font-weight-500 mt-20">Let's make magic!</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
@@ -113,39 +127,52 @@ export default {
         {
           name: 'Kafene Dashboards',
           image: 'https://res.cloudinary.com/michellead/image/upload/v1637054422/portfolio/kafene_xgubxz.png',
-          link: 'https://kafene.com/'
+          link: 'https://kafene.com/',
+          about: 'Kafene is focused on helping americans with credit scores below 650 purchase retail items with its buy now, pay later (BNPL) model.'
         },
         {
           name: 'Patronize dashboard',
           image: 'https://res.cloudinary.com/michellead/image/upload/v1637013976/portfolio/patronize_nlxrso.png',
-          link: 'https://dashboard.patronize.co/'
+          link: 'https://dashboard.patronize.co/',
+          about: 'Patronize enables your business accept Abeg payments, helps you reach more customers and make more successful sales.'
+        },
+        {
+          name: 'Enyata BuildUp',
+          image: 'https://res.cloudinary.com/michellead/image/upload/v1637226467/portfolio/buildup_niapkg.png',
+          link:'https://build.enyata.com/',
+          about: 'Enyata Buildup is a project by Enyata used to provide learning resources/infrastructure and support 10,000 young Africans in their tech growth and journey over the next 5 years.'
         },
         {
           name: 'Onboarding App',
           image: 'https://res.cloudinary.com/michellead/image/upload/v1637013976/portfolio/onboarding_gpbnoy.png',
-          link: 'https://onboarding-buyfood.netlify.app/'
+          link: 'https://onboarding-buyfood.netlify.app/',
+          about: "A simple demo app with from steps built with VueJS."
         },
         {
           name: 'Blessed Above Women',
           image: 'https://res.cloudinary.com/michellead/image/upload/v1637013975/portfolio/bawco_kvuvpg.png',
-          link: 'https://ywf-sbc.org/'
+          link: 'https://ywf-sbc.org/',
+          about: 'Young Women Fellowship is the official Women Group of Shepherdhill Baptist Church.'
         },
         {
           name: 'Uptima Website',
           image: 'https://res.cloudinary.com/michellead/image/upload/v1637049554/portfolio/uptima_bdto8k.png',
-          link: 'https://utrack.uptima.ng/'
+          link: 'https://www.uptima.ng/',
+          about: 'Uptima employ futuristic approaches in helping our clients have the UPTIMA solution for their personalized technological needs.'
         }
       ],
       testimonials: [
         {
           name: 'Ugbodaga Israel',
           title: 'Lead Frontend Engineer',
-          testimony: `Micheal is an excellent frontend engineer, I trust him to translate design to code perfectly, as a teammate, he is always available to provide help whenever possible, and has a keen eye for the tiniest details. I'd recommend Micheal anyday.`
+          testimony: `Micheal is an excellent frontend engineer, I trust him to translate design to code perfectly, as a teammate, he is always available to provide help whenever possible, and has a keen eye for the tiniest details. I'd recommend Micheal anyday.`,
+          profile: 'https://www.linkedin.com/in/ogbeniore/'
         },
         {
           name: 'Oreoluwa Ojo',
           title: 'Head of Engineering',
-          testimony: `I have been working with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Micheal. I could always trust him to translate design to code perfectly.`
+          testimony: `I have been working with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Micheal. I could always trust him to translate design to code perfectly.`,
+          profile: 'https://www.linkedin.com/in/israelugbodaga/'
         }
       ],
       links: [
@@ -178,9 +205,12 @@ export default {
     img {
       width: 150px;
     }
-    p {
+    .text-margin {
       margin: 20px 0;
       // line-height: 75px;
+    }
+    .stack {
+      
     }
     h1 {
       max-width: 675px;
@@ -224,6 +254,10 @@ export default {
     background-position: top left;
   }
 }
+.linkedin {
+  width: 15px;
+  margin-left: 10px;
+}
 .testimonials-section {
   max-width: 1000px;
   margin: auto;
@@ -252,6 +286,7 @@ export default {
     padding: 20px 40px;
     img {
       width: 100%;
+      height: 150px;
     }
   }
   .project_card {

@@ -12,7 +12,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       {name: 'twitter:card', content: 'summary_large_image'},
       {name: 'og:title', content: 'Micheal Adisa'},
-      {name: 'og:description', content: 'Get to know about me!'}
+      {name: 'og:description', content: 'Micheal Adisa is a Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Vue.js, ReactJS, HTML, CSS, Web Development'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/micheal.ico' },
