@@ -208,10 +208,6 @@ export default {
     }
     .text-margin {
       margin: 20px 0;
-      // line-height: 75px;
-    }
-    .stack {
-      
     }
     h1 {
       max-width: 675px;
@@ -278,7 +274,7 @@ export default {
 
 .project_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   // grid-gap: 2rem;
   // grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
