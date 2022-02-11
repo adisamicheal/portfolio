@@ -10,7 +10,7 @@
         <p class="text-size-16">Familiar: Python, Node.JS</p>
       </div>
       <a 
-        href="https://drive.google.com/file/d/1SFXM7J8amgCLkSjRdcv88BnR6gIummGy/view?usp=sharing"
+        href="https://drive.google.com/file/d/1i1oEqskMB_8mFY7zdEs6C5P0V8I3W8dw/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         class="text-size-24"
