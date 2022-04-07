@@ -178,7 +178,7 @@ export default {
         {
           name: 'Oreoluwa Ojo',
           title: 'Head of Engineering, Enyata (Fomer)',
-          testimony: `I have been working with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Micheal. I could always trust him to translate design to code perfectly.`,
+          testimony: `I worked with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Micheal. I could always trust him to translate design to code perfectly.`,
           profile: 'https://www.linkedin.com/in/israelugbodaga/'
         }
       ],
