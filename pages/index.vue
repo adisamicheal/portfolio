@@ -171,13 +171,13 @@ export default {
       testimonials: [
         {
           name: 'Ugbodaga Israel',
-          title: 'Lead Frontend Engineer',
+          title: 'Lead Frontend Engineer, Vue Mastery',
           testimony: `Micheal is an excellent frontend engineer, I trust him to translate design to code perfectly, as a teammate, he is always available to provide help whenever possible, and has a keen eye for the tiniest details. I'd recommend Micheal anyday.`,
           profile: 'https://www.linkedin.com/in/ogbeniore/'
         },
         {
           name: 'Oreoluwa Ojo',
-          title: 'Head of Engineering',
+          title: 'Head of Engineering, Enyata (Fomer)',
           testimony: `I have been working with Micheal for over two years one thing I can say is that he is hardworking and passionate. He is someone you can trust that he will handle a project perfectly. He literally can fix everything in the right working environment. A life learner and a good team member. I strongly recommend Micheal. I could always trust him to translate design to code perfectly.`,
           profile: 'https://www.linkedin.com/in/israelugbodaga/'
         }
