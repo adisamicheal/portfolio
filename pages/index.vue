@@ -10,7 +10,7 @@
         <p class="text-size-16">Familiar: Python, Node.JS</p>
       </div>
       <a 
-        href="https://drive.google.com/file/d/1i1oEqskMB_8mFY7zdEs6C5P0V8I3W8dw/view?usp=sharing"
+        href="https://drive.google.com/file/d/10innKFkBQ57_LA4ONi5_pk-kZJB9xk2b/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         class="text-size-24"
@@ -27,7 +27,7 @@
           <img :src="project.image" :alt="project.altText">
           <p class="font-weight-500 text-size-18 mt-5">{{ project.name }}</p>
           <p class="font-weight-200 text-size-12 mt-5">{{ project.about }}</p>
-          <a :href="project.link" class="text-size-14 mt-15">View Project</a>
+          <a :href="project.link" class="text-size-14 mt-15" target="_blannk">View Project</a>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@
       <h3 class="text-center font-weight-500 text-size-16 mt-5">Get in Touch</h3>
       <div class="contact-section-container">
         <div class="contact">
-          <div class="d-flex">
+          <!-- <div class="d-flex">
             <div>
               <img src="@/assets/images/phone-call.svg" alt="phone icon">
             </div>
@@ -69,19 +69,19 @@
               <p class="text-size-18 font-weight-700">Call Me</p>
               <p class="text-size-16 font-weight-500 mt-10">+234 909 127 1976</p>
             </div>
-          </div>
+          </div> -->
           <div class="mt-50 d-flex">
             <div>
               <img src="@/assets/images/mail.svg" alt="location icon">
             </div>
             <div class="icon-message ml-30">
-              <p class="text-size-18 font-weight-700">Shoot at Me</p>
+              <p class="text-size-18 font-weight-700">Send me an email</p>
               <p>
                 <a class="text-size-16 font-weight-500 mt-10" href="mailto:adisamicheal20@gmail.com" target="_blank" rel="noopener">adisamicheal20@gmail.com</a>
               </p>
             </div>
           </div>
-          <div class="mt-50 d-flex">
+          <!-- <div class="mt-50 d-flex">
             <div>
               <img src="@/assets/images/location.svg" alt="mail icon">
             </div>
@@ -89,7 +89,7 @@
               <p class="text-size-18 font-weight-700">Locate Me</p>
               <p class="text-size-16 font-weight-500 mt-10">Lagos, Nigeria.</p>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="contact-form">
           <!-- Taking this off for now  -->
