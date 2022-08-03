@@ -4,7 +4,9 @@
     'online': $nuxt.isOnline
   }">
     <Navbar />
-    <nuxt />
+    <nuxt :class="{
+      'min-height': routhPath !== '/'
+    }"/>
     <Footer v-if="routhPath !== '/'" />
   </div>
 </template>
@@ -34,6 +36,9 @@ export default {
 }
 .online {
   border: 2px solid #3EB37F;
+  min-height: 100vh;
+}
+.min-height {
   min-height: 100vh;
 }
 </style>

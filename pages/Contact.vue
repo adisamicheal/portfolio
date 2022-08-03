@@ -119,6 +119,7 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
+  margin-top: 30px;
 }
 .contact-section-container {
   display: flex;

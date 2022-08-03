@@ -37,6 +37,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   padding-bottom: 100px;
+//   margin-top: 100%;
 }
 .links {
   display: flex;

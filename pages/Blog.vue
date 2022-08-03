@@ -1,6 +1,8 @@
 <template>
     <div>
-        <div v-if="loading" class="laoding-state">
+        <div v-if="!publicationsData.length"
+            class="laoding-state blog__page"
+        >
             Fetching Blog Content ...
         </div>
         <div v-else class="blog__page">
@@ -16,7 +18,7 @@
                 <div class="blog_container" v-for="(article, index) in publicationsData" :key="index">
                 <a :href="`https://michellead.hashnode.dev/${article.slug}`" target="_blank" rel="noopener noreferrer">
                     <h2 class="header">{{ article.title }}</h2>
-                    <p class="date">{{ article.dateAdded }}</p>
+                    <p class="date">{{ formatDate(article.dateAdded) }}</p>
                     <p class="content">{{ article.brief }}</p>
                 </a>
                 </div>
@@ -61,16 +63,18 @@ export default {
           variables: {
             page: 0
           }})
-        .then((res) => 
-            // console.log(res.data.user.publication.posts)
+        .then((res) =>
+            // console.log(res.data.user.publication.posts),
             this.publicationsData = res.data.user.publication.posts,
             this.loading = false
         )
     },
     methods: {
         formatDate(val) {
-            let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            return val.toLocaleDateString("en-US", options)
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const date = new Date(val)
+
+            return date.toLocaleDateString("en-US", options)
         }
     }
 }
