@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="!publicationsData.length"
+        <div v-if="!getPublications.length"
             class="laoding-state blog__page"
         >
             Fetching Blog Content ...
@@ -15,12 +15,14 @@
                     View more on hashnode
             </a>
             <div>
-                <div class="blog_container" v-for="(article, index) in publicationsData" :key="index">
-                <a :href="`https://michellead.hashnode.dev/${article.slug}`" target="_blank" rel="noopener noreferrer">
+                <div class="blog_container" v-for="(article, index) in getPublications" :key="index">
+                <nuxt-link :to="`blog/${article.slug}`">
+                <!-- <a :href="`https://michellead.hashnode.dev/${article.slug}`" target="_blank" rel="noopener noreferrer"> -->
                     <h2 class="header">{{ article.title }}</h2>
                     <p class="date">{{ formatDate(article.dateAdded) }}</p>
                     <p class="content">{{ article.brief }}</p>
-                </a>
+                </nuxt-link>
+                <!-- </a> -->
                 </div>
             </div>
         </div>
@@ -28,48 +30,54 @@
 </template>
 
 <script>
-import gql from 'graphql-tag'
+// import gql from 'graphql-tag'
+import { mapActions, mapGetters } from 'vuex';
 
-const GET_USER_ARTICLES = gql`
-    query GetUserArticles($page: Int!) {
-        user(username: "michellead") {
-            publication {
-                posts(page: $page) {
-                    title
-                    brief
-                    slug
-                    dateAdded
-                    contentMarkdown
-                }
-            }
-        }
-    }
-`;
+
+//how to do it in component, i moved it to the store
+// const GET_USER_ARTICLES = gql`
+//     query GetUserArticles($page: Int!) {
+//         user(username: "michellead") {
+//             publication {
+//                 posts(page: $page) {
+//                     title
+//                     brief
+//                     slug
+//                     dateAdded
+//                     contentMarkdown
+//                 }
+//             }
+//         }
+//     }
+// `;
 
 export default {
     data() {
         return {
-            loading: false,
             // Initialize your apollo data
-            publicationsData: '',
+            // publicationsData: '',
         }
     },
     mounted() {
-        this.loading = true
-        
-        this.$apollo
-        .mutate({
-          mutation: GET_USER_ARTICLES,
-          variables: {
-            page: 0
-          }})
-        .then((res) =>
-            // console.log(res.data.user.publication.posts),
-            this.publicationsData = res.data.user.publication.posts,
-            this.loading = false
-        )
+        this.fetchPublications()
+        //how to do it in component, i moved it to the store
+
+        // this.$apollo
+        // .mutate({
+        //   mutation: GET_USER_ARTICLES,
+        //   variables: {
+        //     page: 0
+        //   }})
+        // .then((res) =>
+        //     // console.log(res.data.user.publication.posts),
+        //     this.publicationsData = res.data.user.publication.posts,
+        // )
+    },
+    computed: {
+        ...mapGetters(['getPublications'])
     },
     methods: {
+        ...mapActions(['fetchPublications']),
         formatDate(val) {
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             const date = new Date(val)
