@@ -1,8 +1,8 @@
 <template>
   <header>
     <nav>
+        <nuxt-link to="/" class="name">Micheal</nuxt-link>
         <ul>
-            <li><nuxt-link to="/">home</nuxt-link></li>
             <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
             <li><nuxt-link to="/blog">Blog</nuxt-link></li>
             <li><nuxt-link to="/contact">Contact</nuxt-link></li>
@@ -18,10 +18,23 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.name {
+    font-size: 36px;
+    font-family: 'Sacramento', cursive !important;
+    text-decoration: none;
+    color: #000;
+}
 header {
     padding: 50px 10px;
     margin: auto;
-    max-width: 800px;
+    max-width: 1200px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 ul {
     display: flex;
@@ -39,7 +52,7 @@ ul> li > a {
 }
 
 @media screen and (max-width: 768px) {
-    ul {
+    nav {
         flex-direction: column;
     }
     .heading {
