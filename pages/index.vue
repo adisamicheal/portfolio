@@ -79,8 +79,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .page_layout {
+    margin-bottom: 0;
+  }
   .page_layout .page_hero {
-    padding: 100px 20px 0 20px;
+    padding: 20px;
   }
 }
 </style>

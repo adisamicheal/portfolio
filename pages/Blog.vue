@@ -84,7 +84,7 @@ export default {
 .blog__page {
     max-width: 660px;
     margin: 20px auto;
-    padding: 20px 10px;
+    padding: 20px;
 }
 .blog__page h1 {
     font-size: 24px;
