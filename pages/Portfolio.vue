@@ -106,9 +106,6 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
- .projects-section {
-    margin-top: 100px;
-  }
   .project_cards  {
     padding: 0 20px;
   }

@@ -49,11 +49,5 @@ export default {
   .footer {
     padding: 0 0 50px 20px;
   }
-  .links {
-    flex-direction: column;
-    li {
-      margin-top: 30px;
-    }
-  }
 }
 </style>

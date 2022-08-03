@@ -190,11 +190,15 @@ textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .testimonial-container {
+    margin-top: 0 !important;
+  }
   .contact-section {
-    padding:0 20px 100px 20px;
+    padding:0 20px 0 20px;
   }
   .contact-section-container {
     flex-direction: column;
+    margin-top: 0;
   }
   .contact-form {
     margin-top: 100px;
