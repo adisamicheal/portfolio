@@ -42,8 +42,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+     // https://go.nuxtjs.dev/axios
+    '@nuxtjs/apollo',
   ],
+
+  // Apollo configuration
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'https://api.hashnode.com',
+      },
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
