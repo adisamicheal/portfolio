@@ -10,7 +10,7 @@
         <p class="text-size-16">Familiar: Python, Node.JS</p>
       </div> -->
       <!-- <p class="text-size-14">Code is not magic. ;)</p> -->
-      <a 
+      <!-- <a 
         href="https://drive.google.com/file/d/10innKFkBQ57_LA4ONi5_pk-kZJB9xk2b/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
@@ -18,7 +18,7 @@
       >
         <span class="font-weight-500">Resume</span>
         <img src="@/assets/images/arrow.svg" alt="download-icon" svg-inline>
-      </a>
+      </a> -->
     </div>
   </div>
 </template>
