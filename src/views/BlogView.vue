@@ -24,12 +24,12 @@
 
 import json from '../data/data.json'
 import { defineComponent } from 'vue';
+import { useMeta } from 'vue-meta'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-import { useMeta } from 'vue-meta'
 
 export default defineComponent({
-     setup () {
+    setup () {
         useMeta({
             title: 'Micheal Adisa - Blog',
             htmlAttrs: { lang: 'en', amp: true }
