@@ -1,0 +1,59 @@
+[
+
+    {
+        "name": "Kafene",
+        "image": "Kafene.png",
+        "link": "https://kafene.com/",
+        "about": "Kafene is focused on helping americans with credit scores below 650 purchase retail items with its buy now, pay later (BNPL) model.",
+        "altText": "A screenshot of Kafene website on a laptop screen"
+    },
+    {
+        "name": "Enyata",
+        "image": "Enyata.png",
+        "link":"https://enyata.com/",
+        "about": "Enyata Buildup is a project by Enyata used to provide learning resources/infrastructure and support 10,000 young Africans in their tech growth and journey over the next 5 years.",
+        "altText": "A screenshot of Enyata BuilUp website on a laptop screen"
+    },
+    {
+        "name": "Patronize",
+        "image": "Patronize.png",
+        "link": "https://patronize.co/",
+        "about": "Patronize enables your business accept Abeg payments, helps you reach more customers and make more successful sales.",
+        "altText": "A screenshot of Patronize Dashboard on a laptop screen"
+    },
+    {
+        "name": "Uptima",
+        "image": "Uptima.png",
+        "link": "https://www.uptima.ng/",
+        "about": "Uptima employ futuristic approaches in helping our clients have the UPTIMA solution for their personalized technological needs.",
+        "altText": "A screenshot of Uptima website on a laptop screen"
+    },
+    {
+        "name": "Blessed Above Women",
+        "image": "Ywf.png",
+        "link": "https://ywf-sbc.org",
+        "about": "Young Women Fellowship is the official young Women Group of Shepherdhill Baptist Church, a church situated in the heart of Obanikoro, Lagos, Nigeria.",
+        "altText": "A screenshot of Young Women Fellowship website on a laptop screen"
+    },
+    {
+        "name": "PDFGen",
+        "image": "PDFGen.png",
+        "link": "https://getpdfgen.com",
+        "about": "PDFGEN, short for Portable Document Format Generator, is a free online tool that allows you to generate PDF files from any web page.",
+        "altText": "A screenshot of Young Women Fellowship website on a laptop screen"
+    },
+    {
+        "name": "My Portfolio",
+        "image": "Portfolio.png",
+        "link": "https://michellead.netlify.app",
+        "about": "<b>Portfolio Website</b> - My personal portfolio website to showcase my work and writings. My portfolio stands as my brand.",
+        "altText": "A screenshot of Young Women Fellowship website on a laptop screen"
+    },
+    {
+        "name": "Floshab",
+        "image": "Floshab.png",
+        "link": "https://floshab.netlify.app",
+        "about": "Floshab is a design and priting company that designs and prints all kinds of stationary and promotional materials.",
+        "altText": "A screenshot of Young Women Fellowship website on a laptop screen"
+    }
+]
