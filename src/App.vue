@@ -1,14 +1,23 @@
 <template>
   <div>
+    <metainfo>
+      <template v-slot:title="{ content }">{{ content ? `${content}` : `SITE_NAME` }}</template>
+    </metainfo>
     <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useMeta } from 'vue-meta'
 
 export default defineComponent({
-  
+  setup () {
+    useMeta({
+      title: 'Micheal Adisa - Home',
+      htmlAttrs: { lang: 'en', amp: true }
+    })
+  }
 })
 </script>
 

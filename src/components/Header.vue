@@ -208,7 +208,7 @@ export default {
   justify-content: space-between;
   padding: 0 9em;
   @media (max-width: 768px) {
-    padding: 0 3em;
+    padding: 0 1.5em;
     background: $primary;
   }
   &__logo {

@@ -16,6 +16,7 @@
 <script lang="ts">
 /* eslint-disable */
 import { defineComponent } from 'vue';
+import { useMeta } from 'vue-meta'
 import json from '../data/data.json'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
@@ -26,6 +27,12 @@ type singleBlog = {
 
 export default defineComponent({
     components: { Header, Footer },
+    setup () {
+        useMeta({
+            title: 'Micheal Adisa - Blog',
+            htmlAttrs: { lang: 'en', amp: true }
+        })
+    },
     data() {
         return {
             posts: json,
@@ -85,6 +92,7 @@ export default defineComponent({
     margin: 100px auto;
     @media screen and (max-width: 801px) {
         padding: 0 3em;
+        margin: 0 0 100px 0;
     }
     h1 {
         margin: 20px 0;

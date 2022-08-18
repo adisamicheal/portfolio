@@ -26,9 +26,16 @@ import { defineComponent } from 'vue'
 import json from '../data/portfolio.json'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+import { useMeta } from 'vue-meta'
 
 export default defineComponent({
     components: { Header, Footer },
+    setup () {
+        useMeta({
+            title: 'Micheal Adisa - Portfolio',
+            htmlAttrs: { lang: 'en', amp: true }
+        })
+    },
     data() {
         return {
             portfolio: json

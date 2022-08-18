@@ -12,6 +12,7 @@
     "core-js": "^3.8.3",
     "graphql-tag": "^2.12.6",
     "vue": "^3.2.13",
+    "vue-meta": "^3.0.0-alpha.10",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0",
     "vuex-persist": "^3.1.3"

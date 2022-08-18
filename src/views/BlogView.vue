@@ -26,7 +26,15 @@ import json from '../data/data.json'
 import { defineComponent } from 'vue';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
+import { useMeta } from 'vue-meta'
+
 export default defineComponent({
+     setup () {
+        useMeta({
+            title: 'Micheal Adisa - Blog',
+            htmlAttrs: { lang: 'en', amp: true }
+        })
+    },
     data() {
         return {
             posts: json
