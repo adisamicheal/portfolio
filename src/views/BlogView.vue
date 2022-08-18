@@ -54,7 +54,7 @@ export default defineComponent({
             () => {
                 if(typeof this.$refs.home === 'object') {
                 ((this.$refs.home as home).showNav)
-                if ((this.$refs.home as home).showNav === true) {
+                if ((this.$refs.home as home).showNav === true && (this.$refs.home as home).clientWidth <= 968 ) {
                     const homeContainer = document.querySelector('.body');
                     (homeContainer as HTMLElement).style.position = "fixed"
                 } else {

@@ -35,7 +35,11 @@ const routes: Array<RouteRecordRaw> = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  // scrollBehavior() {
+  //   const app = document.getElementById('app') as HTMLElement
+  //   app.scrollIntoView({ behavior: 'smooth' });
+  // }
 })
 
 export default router
