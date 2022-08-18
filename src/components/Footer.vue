@@ -4,7 +4,7 @@
       <div class="footer">
         <div class="footer__top">
           <div class="footer__top__left">
-            <h5 aria-label="Say Hello">TALK TO ME :)</h5>
+            <h1 aria-label="Say Hello">TALK TO ME :)</h1>
             <p>
               <a href="mailto:adisamicheal20@gmail.com" target="_blank" rel="noopener">adisamicheal20@gmail.com</a>
             </p>
@@ -125,7 +125,7 @@ footer {
     }
     &__left {
       margin-right: 10vw;
-      h5 {
+      h1 {
         font-size: 36px;
         font-weight: 400;
         color: #fff;

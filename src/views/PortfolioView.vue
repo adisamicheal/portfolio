@@ -33,7 +33,12 @@ export default defineComponent({
     setup () {
         useMeta({
             title: 'Micheal Adisa - Portfolio',
-            htmlAttrs: { lang: 'en', amp: true }
+            htmlAttrs: { lang: 'en', amp: true },
+            meta: [
+                { charset: 'utf-8' },
+                { name: 'description', content: 'Micheal Adisa - Highly skilled with web performance, accessibility & UI Engineering. Approach engineering with usability and user experience as core building block.' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+            ]
         })
     },
     data() {

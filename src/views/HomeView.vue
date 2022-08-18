@@ -73,6 +73,7 @@
 /* eslint-disable */
 
 import { defineComponent } from 'vue';
+import { useMeta } from 'vue-meta';
 import HeaderComponent from '../components/Header.vue'
 import Footer from '../components/Footer.vue';
 
@@ -81,6 +82,17 @@ export default defineComponent({
   components: {
     HeaderComponent,
     Footer
+  },
+  setup () {
+    useMeta({
+        title: 'Micheal Adisa',
+        htmlAttrs: { lang: 'en', amp: true },
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'description', content: 'Micheal Adisa - Highly skilled with web performance, accessibility & UI Engineering. Approach engineering with usability and user experience as core building block.' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        ]
+    })
   },
   data() {
     return {
@@ -190,6 +202,7 @@ export default defineComponent({
       margin-top: 80px;
       @media (max-width: 768px) {
         width: 100%;
+        height: 100%;
       }
     }
   }
