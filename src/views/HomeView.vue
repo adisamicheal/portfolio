@@ -1,72 +1,72 @@
 <template>
-<div>
   <div class="body">
-    <HeaderComponent class="navbar" ref="home"/>
-    <section class="home__section" ref="homeHero">
-      <div class="home__hero">
-        <div class="home__hero__content fadein-up">
-          <h1 aria-label="Frontend Engineer">
-            Frontend
-            <br>
-            Engineer<span>.</span>
-          </h1>
-          <p>I like to make things, especially those that work on computers and on the web.</p>
-          <!-- <div>
-            <ul>
-              <li>Highly skilled with web performance, accessibility & UI Engineering</li>
-              <li>Approach engineering with usability and user experience as core building block.</li>
-            </ul>
-          </div> -->
+    <div>
+      <HeaderComponent class="navbar" ref="home"/>
+      <section class="home__section" ref="homeHero">
+        <div class="home__hero">
+          <div class="home__hero__content fadein-up">
+            <h1 aria-label="Frontend Engineer">
+              Frontend
+              <br>
+              Engineer<span>.</span>
+            </h1>
+            <p>I like to make things, especially those that work on computers and on the web.</p>
+            <!-- <div>
+              <ul>
+                <li>Highly skilled with web performance, accessibility & UI Engineering</li>
+                <li>Approach engineering with usability and user experience as core building block.</li>
+              </ul>
+            </div> -->
+          </div>
+          <div class="fadein-left">
+            <img
+              id="micheal_adisa"
+              class="header__logo" 
+              src="../assets/heroImage.png"
+              alt="Micheal Adisa" 
+              accesskey="micheal_adisa">
+          </div>
         </div>
-        <div class="fadein-left">
-          <img
-            id="micheal_adisa"
-            class="header__logo" 
-            src="../assets/heroImage.png"
-            alt="Micheal Adisa" 
-            accesskey="micheal_adisa">
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="home__stack" id="stack" ref="stack">
-      <div>
-        <div class="home__stack__first container fadein-up">
-          <div class="shake">
-            .
+      <section class="home__stack" id="stack" ref="stack">
+        <div>
+          <div class="home__stack__first container fadein-up">
+            <div class="shake">
+              .
+            </div>
+            <div>
+              <h2 aria-label="Design">Design.</h2>
+              <p>
+                Frequent times i find myself putting texts and shapes together to born out a pleasing UI like the 
+                one you are going through right now. I utilize tools like Figma, Adobe XD and Corel draw for 
+                various design crafting and manipulation.
+              </p>
+            </div>
           </div>
-          <div>
-            <h2 aria-label="Design">Design.</h2>
-            <p>
-              Frequent times i find myself putting texts and shapes together to born out a pleasing UI like the 
-              one you are going through right now. I utilize tools like Figma, Adobe XD and Corel draw for 
-              various design crafting and manipulation.
-            </p>
+          <div class="home__stack__first container">
+            <div>
+              <h2  aria-label="Development">Development.</h2>
+              <p>
+                In building applications, i utilize but not limited to tools like Javascript, Typescript, VueJs, 
+                ReactJs, NodeJs, SCSS, Python among others. I can absolutely function independently and deliver 
+                fast, resilient solutions optimized for scale with performance, usability and scalabilty as the 
+                building blocks.
+              </p>
+            </div>
+            <div class="shake">
+              .
+            </div>
           </div>
         </div>
-        <div class="home__stack__first container">
-          <div>
-            <h2  aria-label="Development">Development.</h2>
-            <p>
-              In building applications, i utilize but not limited to tools like Javascript, Typescript, VueJs, 
-              ReactJs, NodeJs, SCSS, Python among others. I can absolutely function independently and deliver 
-              fast, resilient solutions optimized for scale with performance, usability and scalabilty as the 
-              building blocks.
-            </p>
-          </div>
-          <div class="shake">
-            .
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <Footer />
-    </section>
+      <section>
+        <Footer />
+      </section>
+    </div>
+    
   </div>
-  
-</div>
 </template>
 
 <script lang="ts">
@@ -116,7 +116,8 @@ export default defineComponent({
               ((this.$refs.home as home).showNav)
               if ((this.$refs.home as home).showNav === true) {
                 const homeContainer = document.querySelector('.body');
-                (homeContainer as HTMLElement).style.position = "fixed"
+                (homeContainer as HTMLElement).style.position = "fixed";
+                (homeContainer as HTMLElement).style.right = "0";
               } else {
                 const homeContainer = document.querySelector('.body');
                 (homeContainer as HTMLElement).style.position = "initial"
