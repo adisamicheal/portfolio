@@ -8,6 +8,17 @@
                 <img :src="singleBlog.coverImage" alt="article cover image">
             </div>
             <div class="single-post__content" v-html="markdownParser(singleBlog.contentMarkdown)"></div>
+
+            <div class="single-blog__navigation">
+                <button
+                    aria-label="previous"
+                    @click="switchArticle('previous')"
+                    :disabled="blogIndex === 0 || blogIndex === 1">Previous</button>
+                <button
+                    aria-label="Next"
+                    @click="switchArticle('next')"
+                    :disabled="posts.length === blogIndex">Next</button>
+            </div>
         </div>
         <Footer />
     </div>
@@ -41,8 +52,21 @@ export default defineComponent({
     data() {
         return {
             posts: json,
-            singleBlog: {} as singleBlog
+            singleBlog: {} as singleBlog,
+            blogIndex: 0
         };
+    },
+    watch: { 
+        '$route.params.id': {
+            handler: function(val) {
+                const findArticleIndex = this.posts.findIndex(post => post.slug === val);
+                this.blogIndex = findArticleIndex + 1;
+                const singlePost = this.posts.find(post => post.slug === val);
+                this.singleBlog = singlePost!
+            },
+            deep: true,
+            immediate: true
+        }
     },
     mounted() {
         const singlePost = this.posts.find(post => post.slug === this.$route.params.id);
@@ -86,6 +110,17 @@ export default defineComponent({
                 .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>') // bold text
                 .replace(/\*(.*)\*/gim, '<i>$1</i>') // italic text
             return toHTML && toHTML.trim(); // using trim method to remove whitespace
+        },
+        switchArticle(val: string) {
+            const currentPost = this.posts.find(post => post.slug === this.$route.params.id);
+            const currentPostIndex = this.posts.indexOf(currentPost!);
+            const nextPost = this.posts[currentPostIndex + 1];
+            const previousPost = this.posts[currentPostIndex - 1];
+            if (val === 'next' && nextPost) {
+                this.$router.push(`/blog/${nextPost.slug}`);
+            } else if (val === 'previous' && previousPost) {
+                this.$router.push(`/blog/${previousPost.slug}`);
+            }
         }
     }
 })
@@ -114,6 +149,41 @@ export default defineComponent({
     .single-post__content {
         margin-bottom: 20px;
         line-height: 32px;
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 100px 20px;
+        @media screen and (max-width: 696px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        button {
+            background: transparent;
+            border: 1px solid $primary;
+            padding: 10px;
+            min-width: 200px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background: $primary;
+            border: 1px solid $primary;
+            color: #fff;
+        }
+        button[disabled],
+        button[disabled]:hover,
+        button:disabled {
+            background: transparent;
+            border: 1px solid transparent;
+            color: grey;
+            cursor: not-allowed;
+        }
     }
 }
 </style>
