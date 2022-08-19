@@ -76,8 +76,13 @@ export default defineComponent({
 .portfolio {
     &__heading {
         max-width: 1270px;
-        margin: auto;
+        margin: 100px auto;
         padding: 0 25px;
+        @media screen and (max-width: 969px) {
+            padding: 0 25px;
+            margin: 30px auto 100px auto;
+        }
+
         h1 {
             font-size: 48px;
             max-width: 440px;
