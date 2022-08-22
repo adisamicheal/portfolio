@@ -2,7 +2,17 @@
   <div>
     <Header ref="home"/>
     <section class="project-view">
-        <h1 aria-label="Uptima">Uptima</h1>
+        <h1 aria-label="Uptima">
+            Uptima 
+            <span>
+                <a
+                    href="https://uptima.co"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    visit product
+                </a>
+            </span>
+        </h1>
         <h2>Provide business Solutions</h2>
         <div class="project-view__iteration">
             <div class="project-view__iteration--challenge p-2">
