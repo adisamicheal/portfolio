@@ -25,7 +25,7 @@
             <div class="project-view__iteration--stacks p-2">
                 <h3>Tech Stacks</h3>
                 <ul aria-roledescription="list">
-                    <li class="javascript">Javascript</li>
+                    <li class="typescript">Typescript</li>
                     <li class="vue">Vue</li>
                     <li class="scss">Scss</li>
                     <li class="figma">Figma</li>
