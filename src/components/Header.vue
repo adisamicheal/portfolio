@@ -118,8 +118,8 @@ export default {
   mounted() {
     if (this.$route.name !== 'home') {
       const header = document.querySelector('.header');
-      header.classList.add('blog-header');
-      const style = document.querySelector('svg').style
+      header?.classList.add('blog-header');
+      const style = document.querySelector('svg')?.style || {}
       const path = document.querySelectorAll('path')
       style.fill= '#5800FF'
         path.forEach(element => {
