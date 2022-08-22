@@ -12,8 +12,9 @@
         "name": "Enyata",
         "image": "Enyata.png",
         "link":"https://enyata.com/",
-        "about": "Enyata is a technology company providing engineering-as-a-service solutions at scale to organizations across multiple industries. Enyata buildup is a project by Enyata used to provide learning resources/infrastructure and support 10,000 young Africans in their tech growth and journey over the next 5 years.",
-        "altText": "A screenshot of Enyata website on two different screen sizes, desktop and mobile"
+        "about": "Enyata is a technology company providing engineering-as-a-service solutions at scale to organizations across multiple industries.",
+        "altText": "A screenshot of Enyata website on two different screen sizes, desktop and mobile",
+        "readMoreUrl": "/portfolio/enyata"
     },
     {
         "name": "Patronize",

@@ -66,9 +66,11 @@
                 }
                 .javascript, .clickup {
                     background: #efd81d;
+                    color: #000;
                 }
                 .nuxt, .vue, .vuex, .gsap {
                     background: #03d57e;
+                    color: #000;
                 }
                 .scss {
                     background: #c86195;
@@ -88,9 +90,22 @@
                 }
                 .node {
                     background: #87bf00;
+                    color: #000;
                 }
                 .sql {
                     background: #0d76d0;
+                    color: #fff;
+                }
+                .react {
+                    background: #61d9f8;
+                    color: #000;
+                }
+                .redux {
+                    background: #7348b7;
+                    color: #fff;
+                }
+                .trello {
+                    background: #137ac2;
                     color: #fff;
                 }
             }
