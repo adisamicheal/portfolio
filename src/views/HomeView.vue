@@ -61,6 +61,8 @@
         </div>
       </section>
 
+      <ContactSuccess />
+
       <section class="home__testimonial">
         <div class="home__testimonial--container">
           <figure>
@@ -99,13 +101,15 @@ import { defineComponent } from 'vue';
 import { useMeta } from 'vue-meta';
 import HeaderComponent from '../components/Header.vue'
 import Footer from '../components/Footer.vue';
+import ContactSuccess from '@/components/ContactSuccess.vue';
 
 export default defineComponent({
   name: 'HomeView',
   components: {
     HeaderComponent,
-    Footer
-  },
+    Footer,
+    ContactSuccess
+},
   setup () {
     useMeta({
         title: 'Micheal Adisa',
