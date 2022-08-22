@@ -5,7 +5,8 @@
         "image": "Kafene.png",
         "link": "https://kafene.com/",
         "about": "Kafene is focused on helping americans with credit scores below 650 purchase retail items with its buy now, pay later (BNPL) model.",
-        "altText": "A screenshot of Kafene website on two different screen sizes, desktop and mobile"
+        "altText": "A screenshot of Kafene website on two different screen sizes, desktop and mobile",
+        "readMoreUrl": "/portfolio/kafene"
     },
     {
         "name": "Enyata",

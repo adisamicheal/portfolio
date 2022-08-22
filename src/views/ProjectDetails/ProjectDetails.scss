@@ -13,7 +13,7 @@
         text-transform: uppercase;
         color: grey;
         span {
-            font-size: 14px;
+            font-size: 16px;
             text-transform: lowercase;
             a {
                 color: $primary;
@@ -33,7 +33,7 @@
             flex-direction: column;
         }
         h3 {
-            font-size: 18px;
+            font-size: 24px;
             margin-bottom: 20px;
             font-weight: 500;
         }
@@ -60,6 +60,9 @@
                 li {
                     padding: 5px 10px;
                     border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
                 .javascript, .clickup {
                     background: #efd81d;
@@ -73,6 +76,21 @@
                 }
                 .iot {
                     background: $primary;
+                    color: #fff;
+                }
+                .jira {
+                    background: #0052cc;
+                    color: #fff;
+                }
+                .figma {
+                    background: #eb4c1d;
+                    color: #fff;
+                }
+                .node {
+                    background: #87bf00;
+                }
+                .sql {
+                    background: #0d76d0;
                     color: #fff;
                 }
             }
@@ -89,6 +107,7 @@
     h2 {
         margin: 20px 0;
         font-size: 24px;
+        font-weight: 500;
     }
     blockquote {
         font-size: 36px;
@@ -134,47 +153,6 @@
         li {
             line-height: 48px;
             font-size: 18px;
-        }
-    }
-}
-.reach-out {
-    margin: 50px 0;
-    background: $primary;
-    padding: 50px 0;
-    color: #fff;
-    @media screen and (max-width: 768px) {
-        padding: 30px;
-    }
-    &__container {
-        max-width: 1200px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @media screen and (max-width: 768px) {
-            display: block;
-        }
-        p {
-            font-size: 36px;
-            @media screen and (max-width: 768px) {
-                font-size: 24px;
-                margin: 30px 0;
-            }
-        }
-        a {
-            background: #fff;
-            font-size: 18px;
-            padding: 10px;
-            border-radius: 20px;
-            min-width: 100px;
-            text-align: center;
-            text-decoration: none;
-            color: $primary;
-            transition: all 0.3s ease-in-out;
-        }
-        a:hover {
-            background: $primary;
-            color: #fff;
         }
     }
 }

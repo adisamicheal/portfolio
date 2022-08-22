@@ -2,11 +2,11 @@
   <div>
     <Header ref="home"/>
     <section class="project-view">
-        <h1 aria-label="Uptima">
-            Uptima 
+        <h1 aria-label="Kafene">
+            Kafene 
             <span>
                 <a
-                    href="https://uptima.co"
+                    href="https://kafene.com/"
                     target="_blank"
                     rel="noopener noreferrer">
                     visit product
@@ -18,12 +18,12 @@
             <div class="project-view__iteration--challenge p-2">
                 <h3>Challenge</h3>
                 <p>
-                    Uptima looked into the oil and gas insustry of Nigeria and  discovered there is a need for on demand cloud computing solution for remote monitoring of tanks and tankers within the oil and gas industry.
+                    Kafene’s messaging was contingent on the promise that anyone could create an account and go as far as enabling payment in “in less than 5 minutes”. This meant that whatever software solution we built needed to be optimised for speed, and more importantly, the vendor’s onboarding process should be at most four minutes fifty-nine seconds long.
                 </p>
             </div>
             <div class="project-view__iteration--services p-2">
                 <h3>Services</h3>
-                <p>Engineering - Website, Dashboard</p>
+                <p>Engineering, Product - Merchant, Customer & Adminstrators Dashboard, Team Lead</p>
             </div>
             <div class="project-view__iteration--stacks p-2">
                 <h3>Tech Stacks</h3>
@@ -33,27 +33,27 @@
                     <li class="vue">Vue</li>
                     <li class="scss">Scss</li>
                     <li class="vuex">Vuex</li>
+                    <li class="node">NodeJs</li>
+                    <li class="sql">SQL</li>
+                    <li class="jira">JIRA</li>
                     <li class="figma">Figma</li>
-                    <li class="iot">iot</li>
-                    <li class="clickup">Clickup</li>
-                    <li class="gsap">GSAP</li>
+                    <li class="figma">Websocket</li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="about-project">
         <h1 aria-label="About Uptima">About Uptima</h1>
-        <h2>Uptima is looking to provide solutions to businesses</h2>
+        <h2>Kafene wants to help americans with credit scores below 650 purchase retail items with its buy now, pay later (BNPL) model.</h2>
         <blockquote>
             <p>
-                "Every minute saved in your business, whether it’s in producing, monitoring, maintenance or management is money saved.
-                With connected hardware, software, and data analytics we provide you better insight and control of your business."
+                "Kafene wants you to enjoy the financial flexibility you deserve with affordable lease-to-own options for furniture, appliances, electronics, tires and wheels, and more - for nearly all credit ranges and price points"
             </p>
         </blockquote>
     </section>
     <section class="project-image">
         <div class="project-image__container">
-            <img src="@/assets/portfolio/uptima-detail.png" alt="uptima dashboard page">
+            <img src="@/assets/portfolio/kafene-detail.png" alt="kafene dashboard page">
         </div>
     </section>
     <ContactSuccess />
@@ -61,11 +61,18 @@
         <div class="project-acheivement__container">
             <h1>My role</h1>
             <ul>
-                <li>Solely build marketing website from design ideation to implementation.</li>
-                <li>Fleshout components for Dashboard.</li>
-                <li>Implement Dashboard UI.</li>
-                <li>Co-ordainate with backend engineering to provide engineering solutions to business idea.</li>
-                <li>Beakdown development into sprint to meet business demand and schedule</li>
+                <li>Responsible for engineering 40% of new features on the admin, merchant and customer dashboards.</li>
+                <li>Improved usability performance, and Fixed 90% of Kafene customer application bug issues.</li>
+                <li>Created and maintained a new Kafene customer dashboard to design specifications.</li>
+                <li>Improved Kafene admin dashboard performance and create new features using agile sprints.</li>
+                <li>Maintained features across all applications that serves over 30,000 customers, merchants and admins.</li>
+                <li> 
+                    Collaborate and communicate with backend engineers to ensure seamless integration of frontend and 
+                    backend functionalities.
+                </li>
+                <li>Review code from other engineers to help ensure security, maintainability and performance.</li>
+                <li>Responsible for handling frontend codebases versioning with Git and Github.</li>
+                <li>Scope task on task management board (JIRA, Pivotal Tracker) with Product managers and QA engineers.</li>
             </ul>
         </div>
     </section>
@@ -84,7 +91,7 @@ export default defineComponent({
     components: { Header, Footer, ContactSuccess },
     setup () {
         useMeta({
-            title: 'Provide business Solutions',
+            title: 'Kafene - Case Study',
             htmlAttrs: { lang: 'en', amp: true },
             meta: [
                 { charset: 'utf-8' },
