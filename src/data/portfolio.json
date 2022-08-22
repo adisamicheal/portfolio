@@ -24,9 +24,10 @@
     {
         "name": "Uptima",
         "image": "Uptima.png",
-        "link": "https://www.uptima.ng/",
+        "link": "https://uptima.co/",
         "about": "Uptima employ futuristic approaches in helping our clients have the UPTIMA solution for their personalized technological needs.",
-        "altText": "A screenshot of Uptima website on two different screen sizes, desktop and mobile"
+        "altText": "A screenshot of Uptima website on two different screen sizes, desktop and mobile",
+        "readMoreUrl": "/portfolio/uptima"
     },
     {
         "name": "Blessed Above Women",

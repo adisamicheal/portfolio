@@ -1,0 +1,173 @@
+.project-view, .about-project {
+    max-width: 1200px;
+    margin: auto;
+    @media screen and (max-width: 1200px) {
+        padding: 0 3em;
+    }
+
+}
+.project-view {
+    h1 {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: grey;
+    }
+    h2 {
+        margin: 20px 0;
+        font-size: 36px;
+    }
+    &__iteration {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &--challenge {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+        &--services {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+        &--stacks {
+            flex-grow: 1;
+            flex-basis: 0;
+            ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                li {
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                }
+                .javascript, .clickup {
+                    background: #efd81d;
+                }
+                .nuxt, .vue, .vuex, .gsap {
+                    background: #03d57e;
+                }
+                .scss {
+                    background: #c86195;
+                    color: #fff;
+                }
+                .iot {
+                    background: $primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.about-project {
+    h1 {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: grey;
+    }
+    h2 {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    blockquote {
+        font-size: 36px;
+        font-weight: 700;
+        margin: 50px auto;
+        max-width: 800px;
+        line-height: 48px;
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+.project-image {
+    max-width: 1800px;
+    margin: auto;
+    &__container {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+.project-acheivement {
+    max-width: 1200px;
+    margin: auto;
+    @media screen and (max-width: 1200px) {
+        padding: 0 3em;
+    }
+    &__container {
+        margin: 100px 0;
+    }
+    h1 {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: grey;
+        margin: 50px 0;
+    }
+    ul {
+        // list-style: none;
+        gap: 20px;
+        li {
+            line-height: 48px;
+            font-size: 18px;
+        }
+    }
+}
+.reach-out {
+    margin: 50px 0;
+    background: $primary;
+    padding: 50px 0;
+    color: #fff;
+    @media screen and (max-width: 768px) {
+        padding: 30px;
+    }
+    &__container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+        p {
+            font-size: 36px;
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                margin: 30px 0;
+            }
+        }
+        a {
+            background: #fff;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 20px;
+            min-width: 100px;
+            text-align: center;
+            text-decoration: none;
+            color: $primary;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover {
+            background: $primary;
+            color: #fff;
+        }
+    }
+}

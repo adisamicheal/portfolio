@@ -11,12 +11,12 @@
               Engineer<span>.</span>
             </h1>
             <p>I like to make things, especially those that work on computers and on the web.</p>
-            <!-- <div>
+            <div>
               <ul>
                 <li>Highly skilled with web performance, accessibility & UI Engineering</li>
                 <li>Approach engineering with usability and user experience as core building block.</li>
               </ul>
-            </div> -->
+            </div>
           </div>
           <div class="fadein-left">
             <img
@@ -58,6 +58,29 @@
               .
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="home__testimonial">
+        <div class="home__testimonial--container">
+          <figure>
+            <blockquote>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="quote__quote-mark">
+                <path d="M9.928,3.932A9.709,9.709,0,0,0,.5,13.88v1.243a4.942,4.942,0,1,0,4.941-4.941,4.609,4.609,0,0,0-1.115.14.25.25,0,0,1-.277-.368A6.832,6.832,0,0,1,9.928,6.432a1.25,1.25,0,0,0,0-2.5Z"></path>
+                <path d="M22.25,6.432a1.25,1.25,0,0,0,0-2.5,9.71,9.71,0,0,0-9.428,9.948v1.243a4.942,4.942,0,1,0,4.942-4.941,4.611,4.611,0,0,0-1.116.14.249.249,0,0,1-.26-.092.252.252,0,0,1-.017-.276A6.832,6.832,0,0,1,22.25,6.432Z"></path>
+              </svg>
+              <div>
+                <p>Working with Micheal was an exceptional experience. I can’t say enough great things about his thought process, workflow, deligence and the quality of his code. He is a talented developer who knows his onions.</p>
+              </div>
+            </blockquote>
+            <figcaption>
+              <div>
+                <h3>Fatoki Oladele</h3>
+                <p>CEO, Uptima</p>
+                <router-link to="/portfolio/uptima">See Case Study</router-link>
+              </div>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -245,6 +268,7 @@ export default defineComponent({
     p {
       font-size: 16px;
       line-height: 1.5;
+      max-width: 550px;
     }
   }
   &__trackBack {
@@ -264,6 +288,46 @@ export default defineComponent({
       color: #fff;
       font-size: 16px;
       line-height: 1.5;
+    }
+  }
+  &__testimonial {
+    padding: 100px 0;
+    @media (max-width: 1200px) {
+      padding: 50px;
+    }
+    &--container {
+      max-width: 1200px;
+      margin: auto;
+      figure {
+        blockquote {
+          p {
+            font-size: 48px;
+            line-height: 48px;
+            max-width: 1100px;
+            margin: 0 auto;
+            font-weight: 700;
+            @media screen and (max-width: 768px) {
+              font-size: 24px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+      figcaption {
+        max-width: 1100px;
+        margin: auto;
+        margin-top: 50px;
+        p {
+          margin-bottom: 20px;
+        }
+        a {
+          color: $primary;
+          text-decoration: none;
+          &:hover {
+            color: grey;
+          }
+        }
+      }
     }
   }
 }

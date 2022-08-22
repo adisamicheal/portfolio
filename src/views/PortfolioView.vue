@@ -9,7 +9,11 @@
                 v-for="(data, index) in portfolio" :key="index">
                     <img :src="require(`@/assets/portfolio/${data.image}`)" :alt="data.altText">
                     <p>{{ data.about }}</p>
+                    <router-link v-if="data.readMoreUrl" :to="data.readMoreUrl">
+                        See Project Details
+                    </router-link>
                     <a
+                        v-else
                         :href="data.link"
                         target="_blank"
                         rel="noopener noreferrer">See Project</a>
