@@ -17,11 +17,12 @@
         "readMoreUrl": "/portfolio/enyata"
     },
     {
-        "name": "Patronize",
-        "image": "Patronize.png",
-        "link": "https://patronize.co/",
-        "about": "Patronize enables your business accept pocket app (fka as abeg) payments, helps you reach more customers and make more successful sales.",
-        "altText": "A screenshot of Patronize Dashboard on two different screen sizes, desktop and mobile"
+        "name": "My Portfolio",
+        "image": "Portfolio.png",
+        "link": "https://michellead.netlify.app",
+        "about": "Portfolio Website - My personal portfolio website to showcase my work and writings. My portfolio stands as my brand.",
+        "altText": "A screenshot of my portfolio website on two different screen sizes, desktop and mobile",
+        "readMoreUrl": "/portfolio/micheal"
     },
     {
         "name": "Uptima",
@@ -39,18 +40,18 @@
         "altText": "A screenshot of Young Women Fellowship website on two different screen sizes, desktop and mobile"
     },
     {
+        "name": "Patronize",
+        "image": "Patronize.png",
+        "link": "https://patronize.co/",
+        "about": "Patronize enables your business accept pocket app (fka as abeg) payments, helps you reach more customers and make more successful sales.",
+        "altText": "A screenshot of Patronize Dashboard on two different screen sizes, desktop and mobile"
+    },
+    {
         "name": "PDFGen",
         "image": "PDFGen.png",
         "link": "https://getpdfgen.com",
         "about": "PDFGEN, short for Portable Document Format Generator, is a free online tool that allows you to generate PDF files from any web page.",
         "altText": "A screenshot of Young Women Fellowship website on two different screen sizes, desktop and mobile"
-    },
-    {
-        "name": "My Portfolio",
-        "image": "Portfolio.png",
-        "link": "https://michellead.netlify.app",
-        "about": "Portfolio Website - My personal portfolio website to showcase my work and writings. My portfolio stands as my brand.",
-        "altText": "A screenshot of my portfolio website on two different screen sizes, desktop and mobile"
     },
     {
         "name": "Floshab",

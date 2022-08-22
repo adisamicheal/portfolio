@@ -2,58 +2,49 @@
   <div>
     <Header ref="home"/>
     <section class="project-view">
-        <h1 aria-label="Uptima">
-            Uptima 
+        <h1 aria-label="My Portfolio">
+            My Portfolio 
             <span>
-                <a
-                    href="https://uptima.co"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    visit product
-                </a>
+                <router-link to="/">
+                    visit website
+                </router-link>
             </span>
         </h1>
-        <h2>Provide business Solutions</h2>
+        <h2>Brand and public view</h2>
         <div class="project-view__iteration">
             <div class="project-view__iteration--challenge p-2">
                 <h3>Challenge</h3>
                 <p>
-                    Uptima looked into the oil and gas insustry of Nigeria and  discovered there is a need for on demand cloud computing solution for remote monitoring of tanks and tankers within the oil and gas industry.
+                    My previous portfolio was a simple static website. I wanted to create a more dynamic and interactive website.
                 </p>
             </div>
             <div class="project-view__iteration--services p-2">
                 <h3>Services</h3>
-                <p>Engineering - Website, Dashboard</p>
+                <p>Engineering - Portfolio Website</p>
             </div>
             <div class="project-view__iteration--stacks p-2">
                 <h3>Tech Stacks</h3>
                 <ul aria-roledescription="list">
                     <li class="javascript">Javascript</li>
-                    <li class="nuxt">Nuxt</li>
                     <li class="vue">Vue</li>
                     <li class="scss">Scss</li>
-                    <li class="vuex">Vuex</li>
                     <li class="figma">Figma</li>
-                    <li class="iot">iot</li>
-                    <li class="clickup">Clickup</li>
-                    <li class="gsap">GSAP</li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="about-project">
-        <h1 aria-label="About Uptima">About Uptima</h1>
-        <h2>Uptima is looking to provide solutions to businesses</h2>
+        <h1 aria-label="About Uptima">About</h1>
+        <h2>I am a highly motivated and experienced frontend engineer with over 5 years of professional working experience working with teams on diverse products and projects.</h2>
         <blockquote>
             <p>
-                "Every minute saved in your business, whether it’s in producing, monitoring, maintenance or management is money saved.
-                With connected hardware, software, and data analytics we provide you better insight and control of your business."
+                "I believe the web should be accesibe to all, hence accessibility is a must in the web development world which i treat with utmost concern."
             </p>
         </blockquote>
     </section>
     <section class="project-image">
         <div class="project-image__container">
-            <img src="@/assets/portfolio/uptima-detail.png" alt="uptima dashboard page">
+            <img src="@/assets/portfolio/micheal-detail.png" alt="micehal portfolio website page">
         </div>
     </section>
     <ContactSuccess />
@@ -61,11 +52,7 @@
         <div class="project-acheivement__container">
             <h1>My role</h1>
             <ul>
-                <li>Solely build marketing website from design ideation to implementation.</li>
-                <li>Fleshout components for Dashboard.</li>
-                <li>Implement Dashboard UI.</li>
-                <li>Co-ordainate with backend engineer to provide engineering solutions to business idea.</li>
-                <li>Beakdown development into sprint to meet business demand and schedule</li>
+                <li>Solely build portfolio website from design ideation to implementation.</li>
             </ul>
         </div>
     </section>
@@ -84,7 +71,7 @@ export default defineComponent({
     components: { Header, Footer, ContactSuccess },
     setup () {
         useMeta({
-            title: 'Provide business Solutions',
+            title: 'My Portfolio - Case Study',
             htmlAttrs: { lang: 'en', amp: true },
             meta: [
                 { charset: 'utf-8' },
