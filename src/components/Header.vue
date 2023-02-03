@@ -121,10 +121,10 @@ export default {
       header?.classList.add('blog-header');
       const style = document.querySelector('svg')?.style || {}
       const path = document.querySelectorAll('path')
-      style.fill= '#5800FF'
+      style.fill= '#3d099b'
         path.forEach(element => {
-          element.setAttribute('fill','#5800FF')
-          element.setAttribute('stroke','#5800FF')
+          element.setAttribute('fill','#3d099b')
+          element.setAttribute('stroke','#3d099b')
         });
     }
     this.clientWidth = window.innerWidth;
@@ -141,10 +141,10 @@ export default {
       const path = document.querySelectorAll('path')
       if(this.$route.path === '/') {
         if (val && document.documentElement.clientWidth <= 768) {
-          style.fill= '#5800FF'
+          style.fill= '#3d099b'
           path.forEach(element => {
-            element.setAttribute('fill','#5800FF')
-            element.setAttribute('stroke','#5800FF')
+            element.setAttribute('fill','#3d099b')
+            element.setAttribute('stroke','#3d099b')
           });
         } else {
           style.fill= '#72FFFF'
@@ -161,10 +161,10 @@ export default {
       if (this.$route.path === '/' ) {
         if (newVal === 834) {
           ('yup 1', newVal);
-          style.fill= '#5800FF'
+          style.fill= '#3d099b'
           path.forEach(element => {
-            element.setAttribute('fill','#5800FF')
-            element.setAttribute('stroke','#5800FF')
+            element.setAttribute('fill','#3d099b')
+            element.setAttribute('stroke','#3d099b')
           });
         } else if (newVal <= 834 || newVal >=1667) {
           ('yup 2', newVal);
