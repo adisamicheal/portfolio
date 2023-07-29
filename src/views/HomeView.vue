@@ -1,33 +1,35 @@
 <template>
   <div class="body">
     <div>
-      <HeaderComponent class="navbar" ref="home"/>
-      <section class="home__section" ref="homeHero">
-        <div class="home__hero">
-          <div class="home__hero__content fadein-up">
-            <h1 aria-label="Frontend Engineer">
-              Frontend
-              <br>
-              Engineer<span>.</span>
-            </h1>
-            <p>I like to make things, especially those that work on computers and on the web.</p>
-            <div>
-              <ul>
-                <li>Highly skilled with web performance, accessibility & UI Engineering</li>
-                <li>Approach engineering with usability and user experience as core building block.</li>
-              </ul>
+      <div style="min-height: 100vh; background: linear-gradient(90deg, #3d099b 80%, #72FFFF 20%)">
+        <HeaderComponent class="navbar" ref="home"/>
+        <section class="home__section" ref="homeHero">
+          <div class="home__hero">
+            <div class="home__hero__content fadein-up">
+              <h1 aria-label="Frontend Engineer">
+                Frontend
+                <br>
+                Engineer<span>.</span>
+              </h1>
+              <p>I like to make things, especially those that work on computers and on the web.</p>
+              <div>
+                <ul>
+                  <li>Highly skilled with web performance, accessibility & UI Engineering</li>
+                  <li>Approach engineering with usability and user experience as core building block.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fadein-left">
+              <img
+                id="micheal_adisa"
+                class="header__logo" 
+                src="../assets/heroImage.png"
+                alt="Micheal Adisa" 
+                accesskey="micheal_adisa">
             </div>
           </div>
-          <div class="fadein-left">
-            <img
-              id="micheal_adisa"
-              class="header__logo" 
-              src="../assets/heroImage.png"
-              alt="Micheal Adisa" 
-              accesskey="micheal_adisa">
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section class="home__stack" id="stack" ref="stack">
         <div>
