@@ -26,6 +26,15 @@
         <div class="footer__bottom">
           <div class="footer__bottom__left">
             <p>Micheal Adisa {{ new Date().getFullYear()}}</p>
+            <p
+              style="
+                font-size: 14px;
+                color: #fff;
+                margin-top: 20px;
+              "
+            >
+              Design and layout inspired by olaolu(dot)dev
+            </p>
           </div>
           <div class="footer__bottom__right">
             <ul>
